@@ -1,0 +1,34 @@
+{
+  "entries":[
+    {
+      "cve": "cve id will go here",
+      "cwe": "cwe id will go here",
+      "host": "package manager of package will go here (i.e. 'npm' or 'yarn')",
+      "summary": "summary of vuln from db goes here",
+      "references":
+      [
+        {
+          "url":"url goes here",
+          "tags":["NIST", "tags", "will", "go", "here"]
+        }
+      ],
+      "versions":
+      {
+        "vulnerable":
+        [
+          {
+            "version":"version # will go here (i.e. '1.4.3')",
+            "cpe23":"cpe23Uri will go here",
+          }
+        ],
+        "safe":
+        [
+          {
+            "version":"version # will go here (i.e. '1.4.3')",
+            "cpe23":"cpe23Uri will go here",
+          }
+        ]
+      }
+    }
+  ]
+}

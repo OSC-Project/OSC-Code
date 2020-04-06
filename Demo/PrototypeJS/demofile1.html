@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+		}
+	</style>
+	<body>
+		<script type="text/javascript" src="./prototype/dist/prototype.js"></script>
+		<script>
+			search = function(name){
+				function walkDOM(main) {
+					var arr = [];
+					var loop = function(main) {
+							do {
+								arr.push(main);
+								if(main.hasChildNodes())
+										loop(main.firstChild);
+							}
+							while (main = main.nextSibling);
+					}
+					loop(main);
+					return arr;
+				}
+				dom = walkDOM(document.body);
+				for (var i = 0; i < dom.length; i++) {
+					if (dom[i].innerHTML) {
+						if(dom[i].innerHTML === name){
+							return dom[i];
+						}
+					}
+				}
+				return null;
+		 	}
+		</script>
+		<script type="text/javascript">
+			searchAndReplace = function(){
+				let content = $("replace").value;
+				let searchName = $("search").value;
+				let element = search(searchName);
+
+				if (element){
+					$(element.id).replace(content);
+					//$(element.id).update(content);
+					$("output").update("Replace Complete");
+				} else {
+					$("output").update("No Results Found");
+				}
+
+				$("search").value = "";
+				$("replace").value = "";
+		};
+		</script>
+		<h1 id="header">Exploit Example</h1>
+		<br>
+		<label for="test">Search for:</label>
+		<input id="search" type="text" name="name_field" value="" autocomplete="false">
+		<br>
+		<br>
+		<label for="test">Replace with:</label>
+		<input id="replace" type="text" name="name_field" value="" autocomplete="false">
+		<input type="submit" value="Replace" onclick="searchAndReplace()">
+		<br>
+		<br>
+		<p id="output"></p>
+		<br>
+		<h2 id="storage_header">Information</h2>
+		<div id="storage">
+			<p id="1">Alex</p>
+			<p id="2">John</p>
+			<p id="3">Will</p>
+			<p id="4">Sean</p>
+			<p id="5">Jake</p>
+			<p id="6">Sam</p>
+			<p id="7">Mike</p>
+			<p id="8">Matt</p>
+			<p id="9">Jordan</p>
+			<p id="10">Tom</p>
+			<p id="11">Jeff</p>
+		</div>
+	</body>
+</html>

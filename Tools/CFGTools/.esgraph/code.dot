@@ -1,0 +1,8 @@
+n1 [label="entry", style="rounded"]
+n2 [label="var userInput = \"\";"]
+n3 [label="evaluateUserInput()"]
+n4 [label="exit", style="rounded"]
+n1 -> n2 []
+n2 -> n3 []
+n3 -> n4 []
+n3 -> n4 [color="red", label="exception"]

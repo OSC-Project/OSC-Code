@@ -1,0 +1,19 @@
+<DOCTYPE! html>
+<html>
+<body>
+<h1>Calculator</h1>
+<form action = "" method = "post">
+	<label for="test">What to compute:</label>
+	<input id="testtxt" type="text" name="name_field" value="" autocomplete="false">
+	<input type="submit" value="=">
+	<p id="output"></p>
+</form>
+<button onclick="getElementById('testtxt').value += ' + '">+</button><button onclick="getElementById('testtxt').value += ' - '">-</button><button onclick="getElementById('testtxt').value += ' * '">*</button><button onclick="getElementById('testtxt').value += ' / '">/</button><p> </p>
+<button onclick="getElementById('testtxt').value += 1">1</button><button onclick="getElementById('testtxt').value += 2">2</button><button onclick="getElementById('testtxt').value += 3">3</button><br>
+<button onclick="getElementById('testtxt').value += 4">4</button><button onclick="getElementById('testtxt').value += 5">5</button><button onclick="getElementById('testtxt').value += 6">6</button><br>
+<button onclick="getElementById('testtxt').value += 7">7</button><button onclick="getElementById('testtxt').value += 8">8</button><button onclick="getElementById('testtxt').value += 9">9</button><br>
+<button onclick="getElementById('testtxt').value += ' . '"> . </button><button onclick="getElementById('testtxt').value += 0">0</button><button onclick="getElementById('testtxt').value += ' ^ '">^</button><p> </p>
+<button onclick="getElementById('testtxt').value = ''">clear</button>
+
+</body>
+</html>
