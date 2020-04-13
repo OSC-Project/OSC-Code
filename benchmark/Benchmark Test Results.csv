@@ -7,4 +7,4 @@ BenchmarkTest005,78,TRUE,18,FALSE
 BenchmarkTest006,94,TRUE,17,FALSE
 BenchmarkTest007,78,TRUE,19,FALSE
 BenchmarkTest008,77,TRUE,18,FALSE
-BenchmarkTest009,94,FALSE,17,FALSE
+BenchmarkTest009,94,FALSE,0,FALSE
