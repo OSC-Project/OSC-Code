@@ -1,0 +1,26 @@
+*****CODEQL COMMANDS****
+CREATING
+codeql database create --language=javascript --source-root <folder-to-extract> <output-folder>/javascript-database
+
+DETECTING
+codeql database create --language==java <output-folder>/java-database
+
+UPGRADING
+database upgrade <database>
+
+RUNNING QUERIES
+codeql database analyze <database> <queries> --format=<format> --output=<output>
+
+RUNNING SINGLE QUERIES
+codeql database analyze <javascript-database> ../ql/javascript/ql/src/Declarations/UnusedVariable.ql --format=csv --output=js-analysis/js-results.csv
+
+------------------------------------------------------------
+CONCRETE
+codeql database create --language=javascript --source-root ext_JS_src/<src> DB_storage/<Database>
+
+codeql database upgrade DB_storage/<database>        
+
+codeql database analyze DB_storage/<database> .\OSC_CodeQueries\customCodeInjection2.ql --format=csv --output=queryResults/js-results.csv
+
+
+-------------------------------------------------------------
