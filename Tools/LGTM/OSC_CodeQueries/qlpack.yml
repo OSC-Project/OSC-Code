@@ -1,5 +1,5 @@
 name: OSC-codeql-javascript
 version: 0.0.0
 libraryPathDependencies: codeql-javascript
-dbscheme: ..\ql\javascript\ql\src\semmlecode.javascript.dbscheme
-suites: ..\ql\javascript\ql\src\codeql-suites
+dbscheme: ../ql/javascript/ql/src/semmlecode.javascript.dbscheme
+suites: ../ql/javascript/ql/src/codeql-suites

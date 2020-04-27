@@ -1,0 +1,13 @@
+[2020-04-26 21:48:31] This is codeql execute queries -J-Xmx1024M --off-heap-ram=1024 --verbosity=progress --logdir=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/benchmark-js-database/log --ml-model-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --native-library-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --warnings=show --no-rerun --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/benchmark-js-database/results -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/benchmark-js-database/db-javascript ../ql/javascript/ql/src/Declarations/UnusedVariable.ql
+[2020-04-26 21:48:31] Calling plumbing command: codeql resolve queries --format=json -- ../ql/javascript/ql/src/Declarations/UnusedVariable.ql
+[2020-04-26 21:48:31] Exception caught at top level: /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/ql/javascript/ql/src/Declarations/UnusedVariable.ql does not exist or is not a regular file.
+                      com.semmle.cli2.resolve.ResolveQueriesCommand.executeJSON(ResolveQueriesCommand.java:115)
+                      com.semmle.cli2.resolve.ResolveQueriesCommand.executeJSON(ResolveQueriesCommand.java:60)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:101)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:49)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:114)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:98)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:383)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:174)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:182)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:89)

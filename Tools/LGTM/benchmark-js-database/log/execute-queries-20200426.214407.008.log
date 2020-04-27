@@ -1,0 +1,52 @@
+[2020-04-26 21:44:07] This is codeql execute queries -J-Xmx1024M --off-heap-ram=1024 --verbosity=progress --logdir=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/benchmark-js-database/log --ml-model-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --native-library-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --warnings=show --no-rerun --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/benchmark-js-database/results -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/benchmark-js-database/db-javascript ./OSC_CodeQueries/customCodeInjection2.ql
+[2020-04-26 21:44:07] Calling plumbing command: codeql resolve queries --format=json -- ./OSC_CodeQueries/customCodeInjection2.ql
+[2020-04-26 21:44:07] Plumbing command codeql resolve queries completed:
+                      [
+                        "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql"
+                      ]
+[2020-04-26 21:44:07] Creating executor with 1 threads.
+[2020-04-26 21:44:07] Calling plumbing command: codeql resolve library-path --query=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql --format=json
+[2020-04-26 21:44:07] [DETAILS] resolve library-path> Resolving query at normalized path /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql.
+[2020-04-26 21:44:07] [ERROR] Exception collected asynchronously; saving it while cancelling everything
+                              com.semmle.util.exception.ResourceError: In /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/qlpack.yml, the value dbscheme: "../ql/javascript/ql/src/semmlecode.javascript.dbscheme" is not a relative location within the pack itself.
+                              	at com.semmle.frontend.packs.QlPack.checkRelativePath(QlPack.java:124)
+                              	at com.semmle.frontend.packs.QlPack.setPackFileLocation(QlPack.java:116)
+                              	at com.semmle.frontend.packs.QlPackResolver.lambda$readQlpackJson$2(QlPackResolver.java:180)
+                              	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+                              	at com.semmle.frontend.packs.QlPackResolver.readQlpackJson(QlPackResolver.java:176)
+                              	at com.semmle.frontend.packs.QlPackResolver.findContainingPack(QlPackResolver.java:128)
+                              	at com.semmle.cli2.resolve.ResolveLibraryPathCommand.executeJSON(ResolveLibraryPathCommand.java:127)
+                              	at com.semmle.cli2.resolve.ResolveLibraryPathCommand.executeJSON(ResolveLibraryPathCommand.java:44)
+                              	at com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:101)
+                              	at com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:49)
+                              	at com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:114)
+                              	at com.semmle.cli2.execute.ExecuteQueriesCommand.lambda$executeSubcommand$0(ExecuteQueriesCommand.java:137)
+                              	at com.semmle.cli2.ql.Paralleliser$1.lambda$next$0(Paralleliser.java:68)
+                              	at com.semmle.util.concurrent.FutureUtils.supplyCompose(FutureUtils.java:217)
+                              	at com.semmle.cli2.ql.Paralleliser.lambda$startMoreJobs$1(Paralleliser.java:98)
+                              	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+                              	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+                              	at java.base/java.lang.Thread.run(Unknown Source)
+[2020-04-26 21:44:07] Sequence stamp origin is -6733684742401660834
+[2020-04-26 21:44:07] Stopped the world to close the cache at sequence stamp o+0
+[2020-04-26 21:44:07] The disk cache is freshly trimmed; leave it be.
+[2020-04-26 21:44:07] Starting the world again
+[2020-04-26 21:44:07] Excption caught in async task: In /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/qlpack.yml, the value dbscheme: "../ql/javascript/ql/src/semmlecode.javascript.dbscheme" is not a relative location within the pack itself.
+                      com.semmle.frontend.packs.QlPack.checkRelativePath(QlPack.java:124)
+                      com.semmle.frontend.packs.QlPack.setPackFileLocation(QlPack.java:116)
+                      com.semmle.frontend.packs.QlPackResolver.lambda$readQlpackJson$2(QlPackResolver.java:180)
+                      java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+                      com.semmle.frontend.packs.QlPackResolver.readQlpackJson(QlPackResolver.java:176)
+                      com.semmle.frontend.packs.QlPackResolver.findContainingPack(QlPackResolver.java:128)
+                      com.semmle.cli2.resolve.ResolveLibraryPathCommand.executeJSON(ResolveLibraryPathCommand.java:127)
+                      com.semmle.cli2.resolve.ResolveLibraryPathCommand.executeJSON(ResolveLibraryPathCommand.java:44)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:101)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:49)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:114)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.lambda$executeSubcommand$0(ExecuteQueriesCommand.java:137)
+                      com.semmle.cli2.ql.Paralleliser$1.lambda$next$0(Paralleliser.java:68)
+                      com.semmle.util.concurrent.FutureUtils.supplyCompose(FutureUtils.java:217)
+                      com.semmle.cli2.ql.Paralleliser.lambda$startMoreJobs$1(Paralleliser.java:98)
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+                      java.base/java.lang.Thread.run(Unknown Source)

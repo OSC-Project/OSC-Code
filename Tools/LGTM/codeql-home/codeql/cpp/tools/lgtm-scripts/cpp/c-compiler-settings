@@ -1,0 +1,18 @@
+**/configure:
+  order compiler
+  trace no
+**/collect2:
+  invoke ${odasa_tools}/extractor
+  prepend --linker
+**/ld*:
+**/*-ld*:
+  invoke ${odasa_tools}/extractor
+  prepend --linker
+**/*clang*:
+**/*cc*:
+**/*++*:
+**/icpc:
+  invoke ${odasa_tools}/extractor
+  order compiler, extractor
+  prepend --mimic
+  prepend ${compiler}
