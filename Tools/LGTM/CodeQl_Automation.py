@@ -12,7 +12,7 @@ def getCodeQLCommandMapping():
     
     # CodeQL Commands
     createDB = "codeql database create --language=javascript --source-root {} {}"
-    upgradeDB = "database upgrade {}"
+    upgradeDB = "codeql database upgrade {}"
     runQuery = "codeql database analyze {} {} --format=csv --output={}"
 
     # command Mapping (must remember to fill in the format)
@@ -69,6 +69,69 @@ def make_folder(folder_name, location):
     else:
         return new_path
 
+class NPMextractor:
+    def __init__(self, location):
+        self.dir = location
+        self.NPMcommand = "npm pack {}"
+        
+        
+
+    def get(self, JSpackage):
+        #baseJSDir = ''.join([i for i in JSpackage if((not i.isdigit()) or (i != "." ))])
+        os.chdir(self.dir)
+        make_folder(JSpackage, self.dir)
+
+        notHeadVersion =  self.hasNumbers(JSpackage) # if there are no numbers we will pack the latest version
+
+        if(not notHeadVersion): # we are packing the latest version
+            getPackageCommand = self.NPMcommand.format(JSpackage)
+        else:
+            index = len(JSpackage) 
+            for c in reversed(JSpackage):
+                if((not c.isdigit()) and (c != "." )):
+                    break 
+                index = index - 1
+                    
+            JSpackageFormatted = JSpackage[:index] + "@" + JSpackage[index:]
+            getPackageCommand = self.NPMcommand.format(JSpackageFormatted)
+
+        print(getPackageCommand)
+        pack = subprocess.check_output(getPackageCommand, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
+        self.extractTar()
+        self.removeTar()
+        
+        
+
+    def extractTar(self):
+        for root, dirs, files in os.walk(".", topdown=True):
+                for name in files:
+                    if(".tgz" in name):
+                        tf = tarfile.open(name)
+                        extractionDir = (name.replace("-", "")).replace(".tgz", "")
+                        tf.extractall(extractionDir)
+                    else:
+                        pass 
+                tf.close()
+
+    def removeTar(self):
+        for item in os.listdir("."):
+            if(".tgz" in item):
+                tgzfile = item
+                os.remove(tgzfile)
+            else:
+                pass
+
+    def hasNumbers(self, inputString):
+        return any(char.isdigit() for char in inputString)
+
+
+
+
+        
+
+
+
+
 
 class Automation:
 
@@ -77,9 +140,10 @@ class Automation:
         self.queries = qlFile
         self.status = 0
         self.dbName = (self.js_src + "DB").replace(".", "-")
-        self.csvName = ""
+        self.csvName = (self.dbName + "_" + self.queries + ".csv" ).replace(".ql", "")
         self.dirMap = getDirectoryMapping() 
         self.QLCommands = getCodeQLCommandMapping() 
+        self.npmTool = NPMextractor(self.dirMap[2])
 
     def getAutomationData(self):
         return [self.js_src, self.queries, self.status]
@@ -146,48 +210,56 @@ class Automation:
         queryExist = self.checkForQueries()
         dbExist = self.checkForCodeDB()
 
-        print("Check for JS Folder: " + str(jsExist))
-        print("Check for Queries: " + str(queryExist))
-        print("test for Check for CodeDB: " + str(dbExist))
-        return jsExist
+        #print("Check for JS Folder: " + str(jsExist))
+        #print("Check for Queries: " + str(queryExist))
+        #print("test for Check for CodeDB: " + str(dbExist))
+        
 
         if(not jsExist):   #delegate to src.py to get the JS package
-            pass 
+            
+            print("NO Javascript found with the name: " + self.js_src)
+            print("Attempting to install JS package with npm pack: ")
+            self.npmTool.get(self.js_src)
+            
+            
 
         if(not queryExist): 
             print("NO query(ies) found with the name: " + self.queries)
             return False 
             
         if(dbExist):
-            pass     #delete old DB and make a new CodeQL Database instance 
+            print("warning: CodeQL Database for  " + self.js_src + " already exist")
+            #shutil.rmtree(os.path.join(self.dirMap[4], self.dbName)) #delete old DB in order to make a new CodeQL Database instance 
+            pass     
         
-        # Begining executing the CodeQL Commands
+        # Step 2: formatting the commands to our arguments
         os.chdir(self.dirMap[0])
-        os.chdir(self.dirMap[1])
-        self.csvName = self.js_src + "DB" + "-" + self.queries + ".csv"
+        
+        js_src_location = "\"" + os.path.join(self.dirMap[2], self.js_src) + "\"" 
+        db_location = "\"" + os.path.join(self.dirMap[4], self.dbName) + "\""
+        query_location = "\"" + os.path.join(self.dirMap[3], self.queries) + "\""
+        results_location = "\"" + os.path.join(self.dirMap[6], self.csvName) + "\""
+        
 
-        create = self.QLCommands[0].format(self.js_src, self.js_src + "DB")
-        upgrade = self.QLCommands[1].format(self.js_src + "DB")
-        runQueries = self.QLCommands[2].format(self.js_src + "DB", self.queries, self.csvName)
+        create = self.QLCommands[0].format(js_src_location, db_location)
+        upgrade = self.QLCommands[1].format(db_location)
+        runQueries = self.QLCommands[2].format(db_location, query_location, results_location)
+        print(runQueries)
+        print()
+        print()
 
+        #print(create)
 
-        try:
+        # Step 3: Running commands 
+        if(not dbExist):
+            print("Creating CodeQL Database")
             outputCreate = subprocess.check_output(create, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
-        except:
-            print("Create CodeQL Database Failed!")
-            return False
-
-        try:
+            
+            print("Upgrading CodeQL Database")
             outputUpgrade = subprocess.check_output(upgrade, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
-        except:
-            print("Upgrade CodeQL Database Failed!")
-            return False
-
-        try:
-            outputRunQueries = subprocess.check_output(runQueries, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
-        except:
-            print("Run Queries Failed")
-            return False
+        
+        print("Running Query(ies)")
+        outputRunQueries = subprocess.check_output(runQueries, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
         
         print("Success!")
         return True 
@@ -214,16 +286,19 @@ if __name__ == "__main__":
             autom.clean()
             sys.exit()
         
-
+    elif(len(sys.argv) != 3):
+        print("ERROR: Wrong amount of arguments! Please enter a JS package and query")
+        print("Example: >CodeQL_Automation.py prototype0.0.5 customCodeInjection2.ql")
+        sys.exit()
 
     #sys.argv[1]
     #sys.argv[2]
+    else:
+        # Automation Process 
+        autom = Automation(sys.argv[1], sys.argv[2])
+        #autom = Automation("prototype0.0.5", "customCodeInjection2.ql")
+        autom.verifyDirectoryLayout()
+        autom.run()
 
-    # Automation Process 
-    autom = Automation("prototype0.0.1", "customCodeInjection2.ql")
-    autom.verifyDirectoryLayout()
-    #print("Check for JS Folder: " + str(autom.checkForJSFolder()))
+
     
-    autom.run()
-
-    print("End")
