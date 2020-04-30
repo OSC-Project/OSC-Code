@@ -1,2 +1,11 @@
 CWE,TP,FN,TN,FP,Total,TPR,FPR,Score
 94,2,1,5,0,2,0.6666666666666666,0.0,0.6666666666666666
+,"Total TP:
+2","Total FN:
+1","Total TN:
+5","Total FP:
+0","Total Test Cases:
+2","Average TPR:
+0.6666666666666666","Average FPR:
+0.0","Average Score:
+0.6666666666666666"
