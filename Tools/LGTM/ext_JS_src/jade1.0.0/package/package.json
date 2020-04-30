@@ -16,7 +16,7 @@
     "character-parser": "1.2.0",
     "monocle": "1.1.50",
     "with": "~2.0.0",
-    "constantinople": "~1.0.2"
+    "constantinople": "~4.0.1"
   },
   "devDependencies": {
     "coffee-script": "*",
