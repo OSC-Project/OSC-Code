@@ -4,6 +4,9 @@ import subprocess
 import tarfile
 import json
 from pathlib import Path
+import shutil 
+
+
 
 def getCodeQLCommandMapping():
     
@@ -26,11 +29,11 @@ def getDirectoryMapping():
     # Directories
     codeQLCLI = str(Path(os.getcwd()).parents[0]) 
     StartingDirectory = os.path.normpath(os.getcwd())
-    ext_js_src = os.path.join(codeqlCLI, "ext_JS_src")
-    OSC_CodeQueries = os.path.join(codeqlCLI, "OSC_CodeQueries")
-    DB_Storage = os.path.join(codeqlCLI, "DB_Storage")
-    ql = os.path.join(codeqlCLI, "ql")
-    queryResults = os.path.join(codeqlCLI, "queryResults")
+    ext_js_src = os.path.join(StartingDirectory, "ext_JS_src")
+    OSC_CodeQueries = os.path.join(StartingDirectory, "OSC_CodeQueries")
+    DB_Storage = os.path.join(StartingDirectory, "DB_Storage")
+    ql = os.path.join(StartingDirectory, "ql")
+    QueryResults = os.path.join(StartingDirectory, "Query_Results")
     
     # Directory Mapping (usage: os.chdir(dir[1]) = os.chdir(codeQLCLI)
     dirMap = {
@@ -40,9 +43,31 @@ def getDirectoryMapping():
         3 : OSC_CodeQueries,
         4 : DB_Storage,
         5 : ql,
-        6 : queryResults
+        6 : QueryResults
     }
     return dirMap 
+
+def make_folder(folder_name, location):
+    folder_name = folder_name.replace("%", "")
+    folder_name = folder_name.replace("?", "")
+    folder_name = folder_name.replace("/", "")
+    folder_name = folder_name.replace("\\", "")
+    folder_name = folder_name.replace("*", "")
+    folder_name = folder_name.replace(":", "")
+    folder_name = folder_name.replace("<", "")
+    folder_name = folder_name.replace(">", "")
+    folder_name = folder_name.replace("|", "")
+    #folder_name = folder_name.replace(".", "")
+
+    new_path = os.path.join(location, folder_name)
+    #print(new_path)
+
+    if not os.path.exists(new_path):
+        #print("Finalizing folder path: ", new_path)
+        os.mkdir(new_path)
+        return new_path
+    else:
+        return new_path
 
 
 class Automation:
@@ -51,7 +76,7 @@ class Automation:
         self.js_src = JSFolder
         self.queries = qlFile
         self.status = 0
-        self.dbName = ""
+        self.dbName = (self.js_src + "DB").replace(".", "-")
         self.csvName = ""
         self.dirMap = getDirectoryMapping() 
         self.QLCommands = getCodeQLCommandMapping() 
@@ -68,9 +93,9 @@ class Automation:
         try:
             for root, dirs, files in os.walk(".", topdown=True):
                 for name in dirs:
-                    if(name == self.js_src){
+                    if(name == self.js_src):
                         return True 
-                    }
+                    
             return False
         except:
             print("Error in Automation - Check For JS folder")
@@ -79,16 +104,14 @@ class Automation:
     def checkForCodeDB(self):
         os.chdir(self.dirMap[0]) 
         os.chdir(self.dirMap[4])
-        DBname = self.js_src + "DB"
         try:
             for root, dirs, files in os.walk(".", topdown=True):
                 for name in dirs:
-                    if(name == DBname){
+                    if(name == self.dbName):
                         return True 
-                    }
             return False
         except:
-            print("Error in Automation - Check For JS folder")
+            print("Error in Automation - Check For CodeDB")
             return False
 
     def checkForQueries(self):
@@ -97,28 +120,46 @@ class Automation:
         try:
             for root, dirs, files in os.walk(".", topdown=True):
                 for name in files:
-                    if(name == self.queries){
+                    if(name == self.queries):
                         return True 
-                    }
+                    
             return False
         except:
             print("Error in Automation - Check For Query(ies)")
             return False
+
+    def verifyDirectoryLayout(self):
+        os.chdir(self.dirMap[0])
+        make_folder("ext_JS_src", self.dirMap[0])
+        make_folder("DB_Storage", self.dirMap[0])
+        make_folder("Query_Results", self.dirMap[0])
+
+    def clean(self): # CAUTION deletes created directory and contents from verifyDirectoryLayout() CAUTION 
+        os.chdir(self.dirMap[0])
+        shutil.rmtree(self.dirMap[2])
+        shutil.rmtree(self.dirMap[4])
+
     
     def run(self):
-        test1 = self.checkForJSFolder()
-        test2 = self.checkForQueries()
-        test3 = self.checkForCodeDB()
+        
+        jsExist = self.checkForJSFolder()
+        queryExist = self.checkForQueries()
+        dbExist = self.checkForCodeDB()
 
-        if(!test1):   #delegate to src.py to get the JS package
+        print("Check for JS Folder: " + str(jsExist))
+        print("Check for Queries: " + str(queryExist))
+        print("test for Check for CodeDB: " + str(dbExist))
+        return jsExist
+
+        if(not jsExist):   #delegate to src.py to get the JS package
             pass 
 
-        if(!test2): 
+        if(not queryExist): 
             print("NO query(ies) found with the name: " + self.queries)
             return False 
             
-        if(test3):
-            pass:     #delete old DB and make a new CodeQL Database instance 
+        if(dbExist):
+            pass     #delete old DB and make a new CodeQL Database instance 
         
         # Begining executing the CodeQL Commands
         os.chdir(self.dirMap[0])
@@ -167,6 +208,22 @@ if __name__ == "__main__":
     download_script = "src_internalDB.py"
     db_file = "cwe94.json"
 
+    if(len(sys.argv) == 2):
+        if(sys.argv[1] == "clean"):
+            autom = Automation("x", "x")
+            autom.clean()
+            sys.exit()
+        
+
+
+    #sys.argv[1]
+    #sys.argv[2]
+
     # Automation Process 
     autom = Automation("prototype0.0.1", "customCodeInjection2.ql")
+    autom.verifyDirectoryLayout()
+    #print("Check for JS Folder: " + str(autom.checkForJSFolder()))
+    
     autom.run()
+
+    print("End")
