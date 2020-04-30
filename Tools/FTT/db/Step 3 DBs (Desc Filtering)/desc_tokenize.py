@@ -30,9 +30,9 @@ def fdist(wordarray):
 
     return freqs
 
-def sample_term_analysis():
+def sample_term_analysis(relevant_cves):
     #find relevant cves to us (in this case injection)
-    relevant_cves = [cve for cve in data if cve['cwe'] in ["CWE-94", "CWE-95", "CWE-89", "CWE-77", "CWE-78", "CWE-502"]]
+
     relevant_summary = ""
     for cve in relevant_cves:
         relevant_summary += " "+ cve["summary"]
@@ -41,43 +41,59 @@ def sample_term_analysis():
     s = normalize(relevant_summary)
     freq_dist = dict(fdist(s))
 
-    #write results to csv file
-    with open('term_frequencies.csv', 'w') as f:
-        for key in freq_dist.keys():
-            f.write("%s,%s\n"%(key,freq_dist[key]))
+    sum_all_occurences = 0
+    for term in freq_dist.keys():
+        sum_all_occurences+= freq_dist[term]
+    for term in freq_dist.keys():
+        freq_dist[term] = freq_dist[term] / sum_all_occurences
 
-#find relevant cves to us (in this case everything not labeled as an injection)
-relevant_cves = [cve for cve in data if cve['cwe'] not in ["CWE-94", "CWE-95", "CWE-89", "CWE-77", "CWE-78", "CWE-502"]]
-hot_terms = ["command", "arbitrari", "inject", "execut", "sql", "code", "sequel", "sqlite", "waterlin", "postgr", "mysql", "shell"]
+    return freq_dist
 
-result = []
-for vuln in relevant_cves:
-    s = normalize(vuln["summary"])
+sample_cves = [cve for cve in data if cve['cwe'] in ["CWE-94", "CWE-95", "CWE-89", "CWE-77", "CWE-78", "CWE-502"]]
+sample_cve_dist = sample_term_analysis(sample_cves)
+total_cve_dist = sample_term_analysis(data)
 
-    #create result data obj
-    data = {"cve": vuln["cve"], "cwe": vuln["cwe"], "score": 0}
+#for term in sample_cve_dist.keys():
+#    sample_cve_dist[term]-= total_cve_dist[term]
 
-    for term in hot_terms:
-        data[term] = 0
-        if term in s:
-            #add 1 to total score
-            data["score"]+= 1
 
-            #add 1 to frequency table
-            data[term] += 1
+#write results to csv file
+with open('term_frequencies.csv', 'w') as f:
+    for key in sample_cve_dist.keys():
+        f.write("%s,%s\n"%(key,sample_cve_dist[key]))
 
-    #save data obj to result array
-    result.append(data)
-
-#export to csv
-csv_file = "ranks.csv"
-csv_columns = ["cve", "cwe", "score"] + hot_terms
-
-try:
-    with open(csv_file, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-        writer.writeheader()
-        for data in result:
-            writer.writerow(data)
-except IOError:
-    print("I/O error")
+# #find relevant cves to us (in this case everything not labeled as an injection)
+# relevant_cves = [cve for cve in data if cve['cwe'] not in ["CWE-94", "CWE-95", "CWE-89", "CWE-77", "CWE-78", "CWE-502"]]
+# hot_terms = ["command", "arbitrari", "inject", "execut", "sql", "code", "sequel", "sqlite", "waterlin", "postgr", "mysql", "shell"]
+#
+# result = []
+# for vuln in relevant_cves:
+#     s = normalize(vuln["summary"])
+#
+#     #create result data obj
+#     data = {"cve": vuln["cve"], "cwe": vuln["cwe"], "score": 0}
+#
+#     for term in hot_terms:
+#         data[term] = 0
+#         if term in s:
+#             #add 1 to total score
+#             data["score"]+= 1
+#
+#             #add 1 to frequency table
+#             data[term] += 1
+#
+#     #save data obj to result array
+#     result.append(data)
+#
+# #export to csv
+# csv_file = "ranks.csv"
+# csv_columns = ["cve", "cwe", "score"] + hot_terms
+#
+# try:
+#     with open(csv_file, 'w') as csvfile:
+#         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+#         writer.writeheader()
+#         for data in result:
+#             writer.writerow(data)
+# except IOError:
+#     print("I/O error")
