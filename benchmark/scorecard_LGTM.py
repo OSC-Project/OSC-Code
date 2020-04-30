@@ -1,15 +1,39 @@
 import csv
+import os
+import subprocess
+import shutil
 
+new_path = os.path.join("./", "LGTM_Results")
+if not os.path.exists(new_path):
+    os.mkdir(new_path)
+else:
+    shutil.rmtree(new_path)
+    os.mkdir(new_path)
+
+create = "../Tools/LGTM/codeql/codeql database create --language=javascript --source-root {} {}"
+upgrade = "../Tools/LGTM/codeql/codeql database upgrade {}"
+runQuery = "../Tools/LGTM/codeql/codeql database analyze ./LGTM_Results/benchmarkDB ../Tools/LGTM/ql/javascript/ql/src/OSC_CodeQueries/customCodeInjection2.ql --format=csv --output=./LGTM_Results/results/customCodeInjection2results.csv"
+print("Creating CodeQL Database")
+outputCreate = subprocess.check_output(create.format("./", "./LGTM_Results/benchmarkDB"), stderr=subprocess.STDOUT, shell=True).decode().split("\n")
+
+print("Upgrading CodeQL Database")
+outputUpgrade = subprocess.check_output(upgrade.format("./LGTM_Results/benchmarkDB"), stderr=subprocess.STDOUT, shell=True).decode().split("\n")
+new_path = os.path.join("./LGTM_Results", "results")
+os.mkdir(new_path)
+print("Running Query(ies)")
+outputRunQueries = subprocess.check_output(runQuery, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
+
+print("Creating scorecard")
 benchmarks = []
 #cwes = [94, 89, 78]
-cwes=[94]
-
+map = {"Code injection" : 94}
 total_TP = 0
 total_FN = 0
 total_TN = 0
 total_FP = 0
 total_total = 0
 #print(benchmarks)
+
 # name of csv file
 filename = "scorecard.csv"
 # writing to csv file
@@ -20,7 +44,7 @@ with open(filename, 'w') as csvfile:
     # writing the fields
     csvwriter.writerow(['CWE', 'TP', 'FN','TN','FP','Total', 'TPR', 'FPR', 'Score'])
     #print(benchmarks)
-    for cwe in cwes:
+    for cwe in map:
         truepos = 0
         falsepos = 0
         trueneg = 0
@@ -33,11 +57,11 @@ with open(filename, 'w') as csvfile:
                 if ('File Name' not in row[0]):
                     benchmarks.append(row)
         try:
-            with open('output.csv') as csvfile:
+            with open('./LGTM_Results/results/customCodeInjection2results.csv') as csvfile:
                 readCSV = csv.reader(csvfile, delimiter=',')
                 for row in readCSV:
                     for line in benchmarks:
-                         if line[0] in row[3]:
+                         if line[0] in row[4] and cwe in row[0]:
                              #cwe_used = line[1]
                              line[4] = "TRUE"
                              total += 1
@@ -51,7 +75,7 @@ with open(filename, 'w') as csvfile:
 
 
         for line in benchmarks:
-            if line[1] == str(cwe):
+            if line[1] == str(map[cwe]):
                 if line[4] == "FALSE" and line[2] == "TRUE":
                     falseneg += 1
                 else:
@@ -62,7 +86,7 @@ with open(filename, 'w') as csvfile:
         fpr = falsepos / (falsepos + trueneg)
         score = tpr - fpr
 
-        results = [cwe, truepos, falseneg, trueneg, falsepos, total, tpr, fpr, score]
+        results = [str(map[cwe])+":"+cwe, truepos, falseneg, trueneg, falsepos, total, tpr, fpr, score]
         results = [str(i) for i in results]
         #print(results)
 
