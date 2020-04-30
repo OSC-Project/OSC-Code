@@ -244,6 +244,8 @@ class Automation:
         create = self.QLCommands[0].format(js_src_location, db_location)
         upgrade = self.QLCommands[1].format(db_location)
         runQueries = self.QLCommands[2].format(db_location, query_location, results_location)
+        print()
+        print("COPY COMMAND BELOW")
         print(runQueries)
         print()
         print()
