@@ -7,7 +7,6 @@ from pathlib import Path
 import shutil 
 
 
-
 def getCodeQLCommandMapping():
     
     # CodeQL Commands
@@ -125,14 +124,6 @@ class NPMextractor:
         return any(char.isdigit() for char in inputString)
 
 
-
-
-        
-
-
-
-
-
 class Automation:
 
     def __init__(self, JSFolder, qlFile):
@@ -218,7 +209,7 @@ class Automation:
         if(not jsExist):   #delegate to src.py to get the JS package
             
             print("NO Javascript found with the name: " + self.js_src)
-            print("Attempting to install JS package with npm pack: ")
+            print("Attempting to install JS package ")
             self.npmTool.get(self.js_src)
             
             
@@ -245,10 +236,10 @@ class Automation:
         upgrade = self.QLCommands[1].format(db_location)
         runQueries = self.QLCommands[2].format(db_location, query_location, results_location)
         print()
-        print("COPY COMMAND BELOW")
-        print(runQueries)
-        print()
-        print()
+        #print("COPY COMMAND BELOW")
+        #print(runQueries)
+        #print()
+        #print()
 
         #print(create)
 
@@ -264,6 +255,7 @@ class Automation:
         outputRunQueries = subprocess.check_output(runQueries, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
         
         print("Success!")
+        print("")
         return True 
 
     # Delegate this to src_internalDB later
@@ -275,12 +267,15 @@ class Automation:
         self.js_src = JSFolder 
 
 
-
-
 if __name__ == "__main__":
     # External files
     download_script = "src_internalDB.py"
     db_file = "cwe94.json"
+
+    # x = json.loads(sys.argv[1])
+    # print(json.dumps(x))
+    # y = json.loads(sys.argv[2])
+    # print(json.dumps(y))
 
     if(len(sys.argv) == 2):
         if(sys.argv[1] == "clean"):
@@ -290,17 +285,50 @@ if __name__ == "__main__":
         
     elif(len(sys.argv) != 3):
         print("ERROR: Wrong amount of arguments! Please enter a JS package and query")
-        print("Example: >CodeQL_Automation.py prototype0.0.5 customCodeInjection2.ql")
+        print("Example: >CodeQL_Automation.py myPackage1.0.0 customCodeInjection2.ql")
         sys.exit()
 
-    #sys.argv[1]
-    #sys.argv[2]
-    else:
+    elif(".json" in sys.argv[1]): #if package arg is json
+        #packages = json.loads(sys.argv[1])
+        with open(str(sys.argv[1])) as packagesArg:
+            packagesJson = packagesArg.read()
+            packages = json.loads(packagesJson)
+            #print(json.dumps(packages))
+            
+
+            if(".json" in sys.argv[2]): #if query arg is json
+                with open(str(sys.argv[2])) as queriesArg:
+                    queriesJson = queriesArg.read()
+                    queries = json.loads(queriesJson)
+                    #print(json.dumps(queries))
+                    
+                
+                    for package in packages["entries"]:
+                        for query in queries["queries"]:
+                            autom = Automation(package["package"], query["name"])
+                            autom.run()
+                    sys.exit()
+            else:        #only package arg is json
+                for package in packages["entries"]:
+                    autom = Automation(package["package"], sys.argv[2])
+                    autom.run()
+                sys.exit()
+
+    elif(".json" in sys.argv[2]): #only query arg is json
+        with open(str(sys.argv[2])) as queriesArg:
+            queriesJson = queriesArg.read()
+            queries = json.loads(queriesJson)
+            #print(json.dumps(queries))
+            for query in queries["queries"]:
+                autom = Automation(sys.argv[1], query["name"])
+                autom.run()
+            sys.exit()
+
+    else: #none are json 
         # Automation Process 
         autom = Automation(sys.argv[1], sys.argv[2])
         #autom = Automation("prototype0.0.5", "customCodeInjection2.ql")
-        autom.verifyDirectoryLayout()
         autom.run()
-
+        sys.exit()
 
     
