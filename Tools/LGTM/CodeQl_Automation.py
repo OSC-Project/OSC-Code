@@ -196,7 +196,7 @@ class Automation:
 
     
     def run(self):
-        
+        self.verifyDirectoryLayout()
         jsExist = self.checkForJSFolder()
         queryExist = self.checkForQueries()
         dbExist = self.checkForCodeDB()
@@ -278,9 +278,14 @@ if __name__ == "__main__":
     # print(json.dumps(y))
 
     if(len(sys.argv) == 2):
+        autom = Automation("x", "x")
         if(sys.argv[1] == "clean"):
-            autom = Automation("x", "x")
             autom.clean()
+            sys.exit()
+        elif(sys.argv[1] == "setup"):
+            autom.verifyDirectoryLayout()
+            sys.exit()
+        else: 
             sys.exit()
         
     elif(len(sys.argv) != 3):
