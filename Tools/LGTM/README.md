@@ -21,22 +21,22 @@ This guide assumes that NodeJS and NPM are installed, for further help on instal
 There are various way to run the automation for different scenarios. Here is an explaination of each. For further explaination on how the automation works, see design specs subsection. 
 
 1. To run Automation on a single package with a single query:
-> python CodeQL_Automation.py package1.0.0 myquery.ql
+> `python CodeQL_Automation.py package1.0.0 myquery.ql`
 
 Additional notes: JavaScript package is not required to be installed or packed locally prior to running. If you already have the source code see scenario 4.    
 
 2. To Run Automation on multiple packages with multiple queries:
-> python CodeQL_Automation.py packageExample.json queriesExample.json 
+> `python CodeQL_Automation.py packageExample.json queriesExample.json` 
 
 Additional notes: See packagesExample.json and queriesExample.json to see the designated format that the automation accepts. 
 
 3. To remove Databases, source code and other miscellaneous files after running:
-> python CodeQL_Automation.py clean
+> `python CodeQL_Automation.py clean`
 
 Additional notes: This is useful when you want to remove databases and downloaded source code before pushing into the repository. This command will not delete results from queries. <span style="color:red">WARNING:</span> This command will delete the folders that scenario 4 makes, do not keep your original source code in ext_JS_src, instead put a copy of the source code into that directory.   
 
 4. To set up directory structure that the automation uses:
-> python CodeQL_Automation.py setup
+> `python CodeQL_Automation.py setup`
 
 Additional notes: This is useful when you want to have the file directory structure that the automation uses without running any queries on any packages. This process happens automatically in scenario 1 and scenario 2.  
 
