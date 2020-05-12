@@ -2,17 +2,7 @@
     [
         {
             "cwe": 94,
-            "package": "jade1.0.0",
-            "summary": "This package has reported code injection at xyz issues for yzx...",
-            "packager": "npm",
-            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
-            "results": [],
-            "references":["https://nodesecurity.io/advisories/497"]
-            
-        },
-        {
-            "cwe": 94,
-            "package": "jade0.30.0",
+            "package": "BenchmarkTest001",
             "summary": "This package has reported code injection at xyz issues for yzx...",
             "packager": "npm",
             "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
@@ -21,7 +11,7 @@
         },
         {
             "cwe": 94,
-            "package": "prototype0.0.5",
+            "package": "BenchmarkTest002",
             "summary": "This package has reported code injection at xyz issues for yzx...",
             "packager": "npm",
             "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
@@ -30,7 +20,7 @@
         },
         {
             "cwe": 94,
-            "package": "prototype0.0.1",
+            "package": "BenchmarkTest003",
             "summary": "This package has reported code injection at xyz issues for yzx...",
             "packager": "npm",
             "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
@@ -39,7 +29,52 @@
         },
         {
             "cwe": 94,
-            "package": "depot0.1.6",
+            "package": "BenchmarkTest004",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "BenchmarkTest005",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "BenchmarkTest006",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "BenchmarkTest007",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "BenchmarkTest008",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "BenchmarkTest009",
             "summary": "This package has reported code injection at xyz issues for yzx...",
             "packager": "npm",
             "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"], 
