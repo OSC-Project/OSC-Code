@@ -1,0 +1,20 @@
+{
+  "name": "jquery-ui-bootstrap",
+  "version": "1.0.0",
+  "description": "__This project is outdated and no longer maintained. See [this project](http://jquery-ui-bootstrap.github.io/jquery-ui-bootstrap/), which is up-to-date with current Bootstrap styles and is actively maintained.__",
+  "main": "jquery.ui.theme.css",
+  "keywords": "jquery jquery-ui bootstrap jquery-ui-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cller/jquery-ui-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cller/jquery-ui-bootstrap/issues"
+  },
+  "homepage": "https://github.com/cller/jquery-ui-bootstrap#readme",
+  "dependencies": {
+    "jquery-ui": "^1.10.5"
+  }
+}

@@ -1,0 +1,240 @@
+[2020-05-13 16:43:58] This is codeql database create --language=javascript --source-root /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/static-eval2.0.5 /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/static-eval2-0-5DB
+[2020-05-13 16:43:58] Log file was started late.
+[2020-05-13 16:43:58] Using autobuild script /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh.
+[2020-05-13 16:43:58] [DETAILS] database create> Detected autobuild command: /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh.
+[2020-05-13 16:43:58] [PROGRESS] database create> Running command [/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh] in /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/static-eval2.0.5.
+[2020-05-13 16:43:58] Running plumbing command: codeql database trace-command --working-dir=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/static-eval2.0.5 -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/static-eval2-0-5DB /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh
+[2020-05-13 16:43:58] [PROGRESS] database trace-command> /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/static-eval2-0-5DB: Running in /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/static-eval2.0.5: [/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh]
+[2020-05-13 16:43:58] [build] Single-threaded extraction.
+[2020-05-13 16:43:58] [build-err] No externs trap cache found
+[2020-05-13 16:43:58] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/constants.js
+[2020-05-13 16:43:58] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/constants.js (389 ms)
+[2020-05-13 16:43:58] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/net.js
+[2020-05-13 16:43:58] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/net.js (62 ms)
+[2020-05-13 16:43:58] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/globals.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/globals.js (293 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/events.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/events.js (12 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/repl.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/repl.js (13 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/util.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/util.js (28 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/dgram.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/dgram.js (30 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/vm.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/vm.js (21 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/stream.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/stream.js (89 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/child_process.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/child_process.js (63 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/assert.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/assert.js (15 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/os.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/os.js (33 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/console.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/console.js (3 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/readline.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/readline.js (18 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/punycode.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/punycode.js (9 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/https.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/https.js (16 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/domain.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/domain.js (8 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/dns.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/dns.js (44 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/assert_legacy.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/assert_legacy.js (3 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/tty.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/tty.js (13 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/timers.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/timers.js (9 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/querystring.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/querystring.js (11 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/module.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/module.js (10 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/sys.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/sys.js (4 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/path.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/path.js (55 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/string_decoder.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/string_decoder.js (6 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/cluster.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/cluster.js (100 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/v8.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/v8.js (8 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/crypto.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/crypto.js (75 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/zlib.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/zlib.js (43 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/url.js
+[2020-05-13 16:43:59] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/url.js (6 ms)
+[2020-05-13 16:43:59] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/tls.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/tls.js (36 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/process.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/process.js (2 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/http.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/http.js (55 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/buffer.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/buffer.js (9 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/fs.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/nodejs/fs.js (132 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_dom.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_dom.js (75 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/mediasource.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/mediasource.js (9 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/html5.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/html5.js (236 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_anim_timing.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_anim_timing.js (6 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom3.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom3.js (36 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/fetchapi.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/fetchapi.js (23 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/streamsapi.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/streamsapi.js (36 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/fileapi.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/fileapi.js (44 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_navigation_timing.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_navigation_timing.js (20 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_range.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_range.js (15 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_indexeddb.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_indexeddb.js (57 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom2.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom2.js (121 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_elementtraversal.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_elementtraversal.js (4 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_webcrypto.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_webcrypto.js (21 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_vml.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_vml.js (3 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/intl.js
+[2020-05-13 16:44:00] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/intl.js (12 ms)
+[2020-05-13 16:44:00] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_rtc.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_rtc.js (119 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_requestidlecallback.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_requestidlecallback.js (5 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_geolocation.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_geolocation.js (10 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webstorage.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webstorage.js (9 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_usercontent.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_usercontent.js (5 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/window.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/window.js (7 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/page_visibility.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/page_visibility.js (2 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webgl.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webgl.js (169 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_touch_event.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_touch_event.js (10 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_event.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_event.js (28 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/whatwg_encoding.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/whatwg_encoding.js (3 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_event3.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_event3.js (4 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_xml.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_xml.js (3 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_event.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_event.js (15 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_css.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_css.js (101 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_css.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/ie_css.js (18 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_css.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_css.js (85 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_xml.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_xml.js (21 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_css.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_css.js (24 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/iphone.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/iphone.js (9 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_selectors.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_selectors.js (7 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/chrome.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/chrome.js (28 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_batterystatus.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_batterystatus.js (3 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_notifications.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_notifications.js (11 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_screen_orientation.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_screen_orientation.js (3 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_midi.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_midi.js (13 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_serviceworker.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_serviceworker.js (46 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_device_sensor_event.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_device_sensor_event.js (8 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_event.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_event.js (5 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_permissions.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_permissions.js (9 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_gamepad.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_gamepad.js (6 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom1.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom1.js (61 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/url.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/url.js (7 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_event.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_event.js (22 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_encoding.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_encoding.js (8 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/flash.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/flash.js (29 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_pointer_events.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_pointer_events.js (9 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_ext.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_ext.js (5 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_dom.js
+[2020-05-13 16:44:01] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/gecko_dom.js (58 ms)
+[2020-05-13 16:44:01] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_dom.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/webkit_dom.js (32 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_css3d.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_css3d.js (13 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom4.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/web/w3c_dom4.js (2 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/rhino.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/rhino.js (5 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/v8.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/v8.js (9 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/spidermonkey.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/spidermonkey.js (2 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/jsshell.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/vm/jsshell.js (36 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/jquery-3.2.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/jquery-3.2.js (171 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/bdd.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/bdd.js (8 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/should.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/should.js (23 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/vows.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/lib/vows.js (18 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/proxy.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/proxy.js (3 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es5.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es5.js (13 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/intl.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/intl.js (15 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es6_collections.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es6_collections.js (14 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es6.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es6.js (100 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es2017.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es2017.js (4 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es3.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es3.js (118 ms)
+[2020-05-13 16:44:02] [build] Extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es2016.js
+[2020-05-13 16:44:02] [build] Done extracting /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/data/externs/es/es2016.js (2 ms)
+[2020-05-13 16:44:02] [build-err] No JavaScript or TypeScript code found.
+[2020-05-13 16:44:02] [ERROR] Spawned process exited abnormally (code 255; tried to run: [/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh])
+[2020-05-13 16:44:02] Exception caught at top level: Exit status 255 from command: [/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/tools/autobuild.sh]
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:104)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:78)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:130)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:94)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:383)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:174)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:182)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:89)

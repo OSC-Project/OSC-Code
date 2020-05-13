@@ -1,0 +1,129 @@
+[2020-05-13 16:58:25] This is codeql execute queries -J-Xmx1024M --off-heap-ram=1024 --verbosity=progress --logdir=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/getpass-0-1-7DB/log --ml-model-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --native-library-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --warnings=show --no-rerun --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/getpass-0-1-7DB/results -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/getpass-0-1-7DB/db-javascript /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql
+[2020-05-13 16:58:25] Calling plumbing command: codeql resolve queries --format=json -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql
+[2020-05-13 16:58:25] Plumbing command codeql resolve queries completed:
+                      [
+                        "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql"
+                      ]
+[2020-05-13 16:58:25] Creating executor with 1 threads.
+[2020-05-13 16:58:26] Calling plumbing command: codeql resolve library-path --query=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql --format=json
+[2020-05-13 16:58:26] [DETAILS] resolve library-path> Resolving query at normalized path /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql.
+[2020-05-13 16:58:26] [DETAILS] resolve library-path> Found enclosing pack 'OSC-codeql-javascript' at /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries.
+[2020-05-13 16:58:26] [DETAILS] resolve library-path> Adding compilation cache at /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/.cache.
+[2020-05-13 16:58:26] [DETAILS] resolve library-path> Resolving library dependencies from /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/qlpack.yml.
+[2020-05-13 16:58:26] [SPAMMIER] resolve library-path> Recursing into /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM.
+[2020-05-13 16:58:26] [SPAMMIER] resolve library-path> Recursing into /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ql.
+[2020-05-13 16:58:26] [DETAILS] resolve library-path> QL pack dependencies for /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries resolved OK.
+[2020-05-13 16:58:26] [DETAILS] resolve library-path> Found dbscheme through QL packs: /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ql/javascript/ql/src/semmlecode.javascript.dbscheme.
+[2020-05-13 16:58:26] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries",
+                          "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ql/javascript/ql/src"
+                        ],
+                        "dbscheme" : "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ql/javascript/ql/src/semmlecode.javascript.dbscheme",
+                        "compilationCache" : [
+                          "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/.cache"
+                        ],
+                        "relativeName" : "OSC-codeql-javascript/customCodeInjection2.ql"
+                      }
+[2020-05-13 16:58:26] [PROGRESS] execute queries> Compiling query plan for /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql.
+[2020-05-13 16:58:26] [DETAILS] execute queries> Resolving imports for /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql.
+[2020-05-13 16:58:26] Resolved file set for /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql hashes to 87637a4fe0b533e81a6d52666555596f1b76f7b3.
+[2020-05-13 16:58:26] [DETAILS] execute queries> Compilation cache hit for /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql.
+[2020-05-13 16:58:26] [PROGRESS] execute queries> [1/1] Compiled /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql (661ms).
+[2020-05-13 16:58:26] Of 82 predicates, 0 are used in more than one query.
+[2020-05-13 16:58:26] [PROGRESS] execute queries> Starting evaluation of OSC-codeql-javascript/customCodeInjection2.ql.
+[2020-05-13 16:58:26] Starting evaluation of /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql
+[2020-05-13 16:58:26] (0s) Start query execution
+[2020-05-13 16:58:27] (0s) Prepared IMB program for execution: took 0ms
+[2020-05-13 16:58:27] (0s) Beginning execution of program...
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation hasLocation with 233841 rows and 2 columns.
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation exprs with 60792 rows and 5 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate exprs_10#join_rhs/2@265842
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation exprs_10#join_rhs with 60792 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::InvokeExpr#class#f/1@518887
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::InvokeExpr#class#f with 61 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate exprs_230#join_rhs/3@f7a3ae
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation exprs_230#join_rhs with 60792 rows and 3 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate TypeScript::TypeAssertion#class#f/1@972b9c
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation TypeScript::TypeAssertion#class#f with 0 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::SeqExpr::getOperand_dispred#fff#antijoin_rhs/1@5410b8
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::SeqExpr::getOperand_dispred#fff#antijoin_rhs with 0 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation Expr::SeqExpr::getLastOperand_dispred#bf/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::SeqExpr::getLastOperand_dispred#bf with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation Expr::SeqExpr::getLastOperand_dispred#bf_10#join_rhs/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::SeqExpr::getLastOperand_dispred#bf_10#join_rhs with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate exprs_032#join_rhs/3@6d0b98
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation exprs_032#join_rhs with 60792 rows and 3 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#3/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#3 with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#2/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#2 with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate m#Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#1/1@bb1502
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation m#Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#1 with 4 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate m#Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs/1@65eb3d
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation m#Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs with 4033 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate m#Expr::ExprOrType::getUnderlyingValue_dispred#bf#cur_delta/1[1]@7408cb (iteration 1)
+[2020-05-13 16:58:27] (0s) 			 - m#Expr::ExprOrType::getUnderlyingValue_dispred#bf_delta has 61 rows (order for disjuncts: delta=<standard>).
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate m#Expr::ExprOrType::getUnderlyingValue_dispred#bf#cur_delta/1[2]@1d4910 (iteration 2)
+[2020-05-13 16:58:27] (0s) Empty delta for m#Expr::ExprOrType::getUnderlyingValue_dispred#bf_delta (order for disjuncts: delta=100).
+[2020-05-13 16:58:27] (0s) Accumulating deltas
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation m#Expr::ExprOrType::getUnderlyingValue_dispred#bf with 61 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#1/2@7b63f8
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs#1 with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs/2@38aba1
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::ExprOrType::getUnderlyingValue_dispred#bf#join_rhs with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::ExprOrType_not_AssignExpr_ParExpr_SeqExpr_TypeAssertion#b/1@510907
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::ExprOrType_not_AssignExpr_ParExpr_SeqExpr_TypeAssertion#b with 61 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::ExprOrType::getUnderlyingValue_dispred#bf#cur_delta/2[1]@f648d3 (iteration 1)
+[2020-05-13 16:58:27] (0s) 			 - Expr::ExprOrType::getUnderlyingValue_dispred#bf_delta has 61 rows (order for disjuncts: delta=<standard>).
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::ExprOrType::getUnderlyingValue_dispred#bf#cur_delta/2[2]@efde60 (iteration 2)
+[2020-05-13 16:58:27] (0s) Empty delta for Expr::ExprOrType::getUnderlyingValue_dispred#bf_delta (order for disjuncts: delta=100).
+[2020-05-13 16:58:27] (0s) Accumulating deltas
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::ExprOrType::getUnderlyingValue_dispred#bf with 61 rows and 2 columns.
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation literals with 34826 rows and 3 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate literals_02#join_rhs/2@fa79e1
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation literals_02#join_rhs with 34826 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::Literal#class#b/1@15ba84
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::Literal#class#b with 0 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate @varref#f/1@69ec91
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation @varref#f with 16090 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::Identifier#class#f/1@fb5f36
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::Identifier#class#f with 34617 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::Identifier::getName#ff/2@971baa
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::Identifier::getName#ff with 34617 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::Identifier::getName_dispred#ff/2@22d21e
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::Identifier::getName_dispred#ff with 34617 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::PropAccess::getPropertyName_dispred#fb/2@d7612a
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::PropAccess::getPropertyName_dispred#fb with 2 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate Expr::InvokeExpr::getCalleeName_dispred#fb#cpe#1/1@c9efd9
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Expr::InvokeExpr::getCalleeName_dispred#fb#cpe#1 with 0 rows and 1 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation AST::ASTNode::getLocation_dispred#bf/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation AST::ASTNode::getLocation_dispred#bf with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation #select#query#ffffffff#shared#2/4 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation #select#query#ffffffff#shared#2 with 0 rows and 4 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation #select#query#ffffffff#antijoin_rhs/3 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation #select#query#ffffffff#antijoin_rhs with 0 rows and 3 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation #select#query#ffffffff#shared#1/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation #select#query#ffffffff#shared#1 with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation #select#query#ffffffff#shared/2 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation #select#query#ffffffff#shared with 0 rows and 2 columns.
+[2020-05-13 16:58:27] (0s) Inferred that non-rec relation Locations::Location::hasLocationInfo_dispred#bfffff/6 is empty
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation Locations::Location::hasLocationInfo_dispred#bfffff with 0 rows and 6 columns.
+[2020-05-13 16:58:27] (0s) Starting to evaluate predicate #select#query#ffffffff/8@a4f61b
+[2020-05-13 16:58:27] (0s)  >>> Wrote relation #select#query#ffffffff with 0 rows and 8 columns.
+[2020-05-13 16:58:27] (0s) Query done
+[2020-05-13 16:58:27] CSV_CACHE_DIFF: Operation,Overall time,NONE,LOAD_EXTENSIONAL,PAGE_RELATION,SORT_RELATION,NODUPS_RELATION,GLOBAL_DISK_SYNC,GLOBAL_TRIM_DISK,GLOBAL_TRIM_STRINGS,GLOBAL_EVICTOR,SCAN_DISK,IO_TRIMMING,IO_WRITING
+[2020-05-13 16:58:27] CSV_CACHE_DIFF: #select#query#ffffffff (customCodeInjection2.ql),0.497,0.186,0.174,0.041,0.053,0.017,0,0,0,0,0,0,0
+[2020-05-13 16:58:27] (0s) Sequence stamp origin is -6727449915326277727
+[2020-05-13 16:58:27] (0s) Stopped the world to sync to disk at sequence stamp o+0
+[2020-05-13 16:58:27] (0s) Starting the world again
+[2020-05-13 16:58:27] CSV_IMB_QUERIES: Query type,Query predicate,Query name,Stage,Success,Time,Number of results,Cumulative time in query
+[2020-05-13 16:58:27] CSV_IMB_QUERIES: Query,#select#query#ffffffff,customCodeInjection2.ql,1,Success,0.497,0,526
+[2020-05-13 16:58:27] Evaluation of /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/customCodeInjection2.ql produced BQRS results
+[2020-05-13 16:58:27] [PROGRESS] execute queries> [1/1] Evaluation done (628ms); writing results to OSC-codeql-javascript/customCodeInjection2.bqrs.
+[2020-05-13 16:58:27] [PROGRESS] execute queries> Shutting down query evaluator.
+[2020-05-13 16:58:27] Stopped the world to close the cache at sequence stamp o+1
+[2020-05-13 16:58:27] The disk cache is freshly trimmed; leave it be.
+[2020-05-13 16:58:27] Starting the world again
+[2020-05-13 16:58:27] Terminating normally.

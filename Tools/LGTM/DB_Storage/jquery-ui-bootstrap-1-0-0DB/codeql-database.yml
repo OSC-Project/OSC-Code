@@ -1,0 +1,21 @@
+---
+sourceLocationPrefix: "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-ui-bootstrap-1.0.0"
+unicodeNewlines: true
+columnKind: "utf16"
+inProgress:
+  primaryLanguage: "javascript"
+  installedExtractors:
+    cpp:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/cpp/"
+    csharp:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/csharp/"
+    go:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/go/"
+    java:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/java/"
+    javascript:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/javascript/"
+    python:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/python/"
+    xml:
+    - "file:///Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/codeql/xml/"
