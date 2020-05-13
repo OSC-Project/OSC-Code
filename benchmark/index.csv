@@ -1,0 +1,10 @@
+﻿File Name,CWE,Vulnerability,Line #
+BenchmarkTest001,94,TRUE,17
+BenchmarkTest002,89,TRUE,25
+BenchmarkTest003,78,TRUE,18
+BenchmarkTest004,94,TRUE,17
+BenchmarkTest005,78,TRUE,18
+BenchmarkTest006,94,TRUE,17
+BenchmarkTest007,78,TRUE,19
+BenchmarkTest008,77,TRUE,18
+BenchmarkTest009,94,FALSE,0
