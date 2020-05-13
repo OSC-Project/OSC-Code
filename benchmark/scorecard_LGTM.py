@@ -13,16 +13,13 @@ else:
     os.mkdir(new_path)
 create = "../Tools/LGTM/codeql/codeql database create --language=javascript --source-root {} {}"
 upgrade = "../Tools/LGTM/codeql/codeql database upgrade {}"
-runQuery = "../Tools/LGTM/codeql/codeql database analyze ./LGTM_Results/benchmarkDB ../Tools/LGTM/ql/javascript/ql/src/OSC_CodeQueries/customCodeInjection2.ql --format=csv --output=./LGTM_Results/results/customCodeInjection2results.csv"
+runQuery = "../Tools/LGTM/codeql/codeql database analyze ./LGTM_Results/benchmarkDB ../Tools/LGTM/ql/javascript/ql/src/OSC_CodeQueries/customCodeInjection2.ql --format=csv --output=./LGTM_Results/customCodeInjection2results.csv"
 print("Creating CodeQL Database")
 outputCreate = subprocess.check_output(create.format("./", "./LGTM_Results/benchmarkDB"), stderr=subprocess.STDOUT, shell=True).decode().split("\n")
 print("Upgrading CodeQL Database")
 outputUpgrade = subprocess.check_output(upgrade.format("./LGTM_Results/benchmarkDB"), stderr=subprocess.STDOUT, shell=True).decode().split("\n")
-new_path = os.path.join("./LGTM_Results", "results")
-os.mkdir(new_path)
 print("Running Query(ies)")
 outputRunQueries = subprocess.check_output(runQuery, stderr=subprocess.STDOUT, shell=True).decode().split("\n")
-new_path = os.path.join("./", "../../LGTM_Results")
 
 def makeGraph(fpr=0, tpr=0, title="Scorecard Graph"):
     x = fpr
@@ -49,7 +46,7 @@ total_total = 0
 # name of csv file
 filename = "scorecard.csv"
 # writing to csv file
-with open('customCodeInjection2 over benchmark', 'w') as csvfile:
+with open('customCodeInjection2 over benchmark'+'.csv', 'w') as csvfile:
     # creating a csv writer object
     csvwriter = csv.writer(csvfile)
 
@@ -71,7 +68,7 @@ with open('customCodeInjection2 over benchmark', 'w') as csvfile:
         for row in benchmarks:
             row.append("FALSE")
         try:
-            with open('./LGTM_Results/results/customCodeInjection2results.csv') as csvfile:
+            with open('./LGTM_Results/customCodeInjection2results.csv') as csvfile:
                 readCSV = csv.reader(csvfile, delimiter=',')
                 for row in readCSV:
                     for line in benchmarks:
