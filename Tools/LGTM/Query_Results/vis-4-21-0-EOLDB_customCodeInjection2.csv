@@ -1,0 +1,3 @@
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution.","warning","Here","/package/dist/vis.js","34455","40","34455","55"
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution.","warning","Here","/package/examples/graph3d/playground/playground.js","386","3","386","10"
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution.","warning","Here","/package/examples/timeline/other/requirejs/scripts/require.js","35","39","35","45"

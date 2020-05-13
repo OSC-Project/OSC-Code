@@ -2,13 +2,467 @@
     [
         {
             "cwe": 94,
-            "package": "packages_src",
+            "package": "alt-0.18.6",
             "summary": "This package has reported code injection at xyz issues for yzx...",
             "packager": "npm",
             "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
             "results": [],
             "references":["https://nodesecurity.io/advisories/497"]
 
-        }
+        },
+        {
+            "cwe": 94,
+            "package": "angular-1.7.8",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "angular-mocks-1.7.8",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "angular-resource-1.7.8",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "asynckit-0.4.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "aws-sign2-0.7.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "backbone-1.4.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "backbone-localstorage-0.3.2",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "bcrypt-pbkdf-1.0.2",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "caseless-0.12.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "clone-2.1.2",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "delayed-stream-1.0.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "depot-0.1.6",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "director-1.2.8",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "ecc-jsbn-0.2.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "ember-data-3.11.4",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "es5-shim-4.5.13",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "fast-json-stable-stringify-2.0.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "flot-3.2.5",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "forever-agent-0.6.1",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "getpass-0.1.7",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "history.js-1.8.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "is-fullwidth-code-point-3.0.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "is-promise-2.1.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "isstream-0.1.2",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "jade-1.11.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "jasmine-3.4.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "jquery-3.4.1",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "jquery-migrate-3.1.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "jsdiff-1.1.1",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "mocha-6.2.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "moment-timezone-0.5.26",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "node-uuid-1.4.8",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "pako-1.0.10",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "process-nextick-args-2.0.1",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "prototype-0.0.5",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "require.js-1.0.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "setprototypeof-1.2.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "should-13.2.3",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "simple-peer-9.5.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "sizzle-2.3.4",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "string_decoder-1.2.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "tunnel-agent-0.6.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "tweetnacl-1.0.1",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "twitter-bootstrap-2.1.1",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "uglify-to-browserify-2.1.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "vis-4.21.0-EOL",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
+        {
+            "cwe": 94,
+            "package": "jquery-ui-bootstrap-1.0.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+
+        },
+        {
+            "cwe": 94,
+            "package": "jquery-validate-2.0.0",
+            "summary": "This package has reported code injection at xyz issues for yzx...",
+            "packager": "npm",
+            "vulnerableRange":["1.0.0","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4"],
+            "results": [],
+            "references":["https://nodesecurity.io/advisories/497"]
+        },
     ]
 }

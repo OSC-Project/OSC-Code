@@ -1,0 +1,2 @@
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution.","warning","Here","/package/bin/jade.js","78","12","78","40"
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution.","warning","Here","/package/jade.js","4510","5","4510","67"

@@ -1,0 +1,4 @@
+﻿Package,File Name,CWE,Vulnerability,Line #
+depot-0.1.6,package/specs/vendor/chai.js,94,TRUE,0
+jade-1.11.0,package/bin/jade.js,94,TRUE,0
+prototype-0.0.5,package/lib/String.js,94,TRUE,0
