@@ -1,0 +1,39 @@
+[2020-05-14 16:39:59] This is codeql database analyze /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/flot-3-2-5DB /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql --format=csv --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/Query_Results/flot-3-2-5DB_CodeInjection.csv
+[2020-05-14 16:39:59] Log file was started late.
+[2020-05-14 16:39:59] [PROGRESS] database analyze> Running queries.
+[2020-05-14 16:39:59] Running plumbing command: codeql database run-queries --ml-model-path= --native-library-path= --warnings=show --no-rerun -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/flot-3-2-5DB /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql
+[2020-05-14 16:39:59] Calling plumbing command: codeql resolve ram --format=json
+[2020-05-14 16:39:59] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1024M",
+                        "--off-heap-ram=1024"
+                      ]
+[2020-05-14 16:39:59] Spawning plumbing command: execute queries -J-Xmx1024M --off-heap-ram=1024 --verbosity=progress --logdir=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/flot-3-2-5DB/log --ml-model-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --native-library-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --warnings=show --no-rerun --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/flot-3-2-5DB/results -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/flot-3-2-5DB/db-javascript /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql
+[2020-05-14 16:40:29] Plumbing command codeql execute queries terminated with status 0.
+[2020-05-14 16:40:29] Plumbing command codeql database run-queries completed with status 0.
+[2020-05-14 16:40:29] [PROGRESS] database analyze> Interpreting results.
+[2020-05-14 16:40:29] Running plumbing command: codeql database interpret-results --format=csv -o=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/Query_Results/flot-3-2-5DB_CodeInjection.csv --max-paths=4 --csv-location-format=line-column -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/flot-3-2-5DB /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql
+[2020-05-14 16:40:29] Calling plumbing command: codeql resolve queries --format=json -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql
+[2020-05-14 16:40:29] Plumbing command codeql resolve queries completed:
+                      [
+                        "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql"
+                      ]
+[2020-05-14 16:40:29] Calling plumbing command: codeql resolve library-path --query=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql --full-library-path=none --dbscheme=none --format=json
+[2020-05-14 16:40:29] [DETAILS] resolve library-path> Resolving query at normalized path /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql.
+[2020-05-14 16:40:29] [DETAILS] resolve library-path> Found enclosing pack 'OSC-codeql-javascript' at /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries.
+[2020-05-14 16:40:29] [DETAILS] resolve library-path> Adding compilation cache at /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/.cache.
+[2020-05-14 16:40:29] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/none
+[2020-05-14 16:40:29] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2020-05-14 16:40:29] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/none"
+                        ],
+                        "dbscheme" : "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/none",
+                        "compilationCache" : [
+                          "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/.cache"
+                        ],
+                        "relativeName" : "OSC-codeql-javascript/CodeInjection.ql"
+                      }
+[2020-05-14 16:40:30] Plumbing command codeql database interpret-results completed.
+[2020-05-14 16:40:30] Exiting with code 0

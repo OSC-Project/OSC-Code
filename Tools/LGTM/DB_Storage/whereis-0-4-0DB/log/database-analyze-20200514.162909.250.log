@@ -1,0 +1,11 @@
+[2020-05-14 16:29:09] This is codeql database analyze /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/whereis-0-4-0DB /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql --format=csv --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/Query_Results/whereis-0-4-0DB_CodeInjection.csv
+[2020-05-14 16:29:09] Log file was started late.
+[2020-05-14 16:29:09] [PROGRESS] database analyze> Running queries.
+[2020-05-14 16:29:09] Running plumbing command: codeql database run-queries --ml-model-path= --native-library-path= --warnings=show --no-rerun -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/whereis-0-4-0DB /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql
+[2020-05-14 16:29:09] Calling plumbing command: codeql resolve ram --format=json
+[2020-05-14 16:29:09] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1024M",
+                        "--off-heap-ram=1024"
+                      ]
+[2020-05-14 16:29:09] Spawning plumbing command: execute queries -J-Xmx1024M --off-heap-ram=1024 --verbosity=progress --logdir=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/whereis-0-4-0DB/log --ml-model-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --native-library-path=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM --warnings=show --no-rerun --output=/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/whereis-0-4-0DB/results -- /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/DB_Storage/whereis-0-4-0DB/db-javascript /Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/OSC_CodeQueries/CodeInjection.ql
