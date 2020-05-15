@@ -15,7 +15,11 @@ def makeGraph(fpr=0, tpr=0, title="Scorecard Graph"):
     y = tpr[1]
     plt.plot(x, y, marker='o', markerfacecolor='blue', markersize=12)
     blue_patch = mpatches.Patch(color='blue', label='Default Query')
-    plt.legend(handles=[red_patch, blue_patch])
+    x=0.66
+    y=1
+    plt.plot(x, y, marker='o', markerfacecolor='green', markersize=12)
+    green_patch = mpatches.Patch(color='green', label='Sink Finder')
+    plt.legend(handles=[red_patch, blue_patch, green_patch])
     plt.plot([0,1], [0,1], color='black', linestyle='dashed', linewidth = 3)
     plt.xlabel('false positive rate')
     plt.ylabel('true positive rate')
@@ -23,19 +27,19 @@ def makeGraph(fpr=0, tpr=0, title="Scorecard Graph"):
     plt.savefig(title+'.png')
 
 print("Creating scorecard")
-benchmarks = []
 #cwes = [94, 89, 78]
 map = {"Code injection" : 94}
 #print(benchmarks)
 xs=[]
 ys=[]
 for file in ['customCodeInjection2', '_CodeInjection']:
+    benchmarks = []
     total_TP = 0
     total_FN = 0
     total_TN = 0
     total_FP = 0
     total_total = 0
-    with open(file+' over Comcast50'+'.csv', 'w') as csvfile:
+    with open(file+' over Comcast50+'+'.csv', 'w') as csvfile:
         # creating a csv writer object
         csvwriter = csv.writer(csvfile)
 
@@ -66,8 +70,8 @@ for file in ['customCodeInjection2', '_CodeInjection']:
                             for row in readCSV:
                                 flag = 0
                                 for line in benchmarks:
-                                     if line[1] in row[4] and cwe in row[0]:
-                                         line[4] = "TRUE"
+                                     if line[1] in row[4] and str(line[4]) == str(row[5]):
+                                         line[5] = "TRUE"
                                          truepos += 1
                                          flag = 1
                                 if (flag == 1):
@@ -78,9 +82,9 @@ for file in ['customCodeInjection2', '_CodeInjection']:
                         except:
                             flag = 0
                             for line in benchmarks:
-                                if line[0].replace(".", "-") in filename and str(map[cwe]) == str(line[2]):
+                                if line[0].replace(".", "-") in filename:
                                     #depot-0.1.6...    vs depot-0-1-6...
-                                    if line[5] == "FALSE" and line[3] == "TRUE":
+                                    if line[5] == "FALSE":
                                         falseneg += 1
                                         flag = 1
                             if flag == 1:
@@ -110,4 +114,4 @@ for file in ['customCodeInjection2', '_CodeInjection']:
         csvwriter.writerow(["", "Total TP:\n" + str(total_TP), "Total FN:\n" + str(total_FN), "Total TN:\n" + str(total_TN), "Total FP:\n" + str(total_FP), "Total Test Cases:\n" + str(total_total), "Average TPR:\n" + str(avg_tpr), "Average FPR:\n" + str(avg_fpr), "Average Score:\n" + str(avg_score)])
         xs.append(avg_fpr)
         ys.append(avg_tpr)
-makeGraph(xs, ys, 'Custom vs Default over Comcast50')
+makeGraph(xs, ys, 'Custom vs Default over Comcast50+')

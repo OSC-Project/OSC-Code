@@ -14,5 +14,843 @@
     {
         "runStarted": "Mon Mar 23 2020 00:37:19 GMT-0400 (Eastern Daylight Time)",
         "results": []
+    },
+    {
+        "runStarted": "Fri May 15 2020 11:29:15 GMT-0400 (Eastern Daylight Time)",
+        "results": [
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/alt-0.18.6/package/dist",
+                "files": [
+                    {
+                        "name": "alt.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    3
+                                ],
+                                "line": [
+                                    274,
+                                    1259,
+                                    1319
+                                ]
+                            },
+                            {
+                                "type": [
+                                    "js_extra",
+                                    2
+                                ],
+                                "line": [
+                                    659,
+                                    659
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/alt-0.18.6/package/lib/store",
+                "files": [
+                    {
+                        "name": "index.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    202
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/alt-0.18.6/package/lib/utils",
+                "files": [
+                    {
+                        "name": "AltUtils.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    45
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/alt-0.18.6/package/lib",
+                "files": [
+                    {
+                        "name": "index.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    211
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/angular-resource-1.7.8/package",
+                "files": [
+                    {
+                        "name": "angular-resource.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    859
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/backbone-1.4.0/package",
+                "files": [
+                    {
+                        "name": "backbone.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    5
+                                ],
+                                "line": [
+                                    1059,
+                                    1460,
+                                    1463,
+                                    1466,
+                                    1469
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/depot-0.1.6/package/specs/vendor",
+                "files": [
+                    {
+                        "name": "chai.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "jsi",
+                                    1
+                                ],
+                                "line": [
+                                    2333
+                                ]
+                            },
+                            {
+                                "type": [
+                                    "js_function",
+                                    2
+                                ],
+                                "line": [
+                                    2535,
+                                    2535
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mocha.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    2041
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/director-1.2.8/package/build",
+                "files": [
+                    {
+                        "name": "director.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    338
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/director-1.2.8/package/lib/director",
+                "files": [
+                    {
+                        "name": "router.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    81
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/es5-shim-4.5.13/package",
+                "files": [
+                    {
+                        "name": "es5-sham.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    32
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "es5-shim.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    70
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/eslint-utils-1.2.0/package",
+                "files": [
+                    {
+                        "name": "index.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    747
+                                ]
+                            },
+                            {
+                                "type": [
+                                    "js_extra",
+                                    3
+                                ],
+                                "line": [
+                                    412,
+                                    412,
+                                    633
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/flot-3.2.5/package/dist/es5",
+                "files": [
+                    {
+                        "name": "jquery.flot.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    1
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/flot-3.2.5/package/source",
+                "files": [
+                    {
+                        "name": "jquery.flot.hover.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    289
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "jquery.flot.touch.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    4
+                                ],
+                                "line": [
+                                    62,
+                                    65,
+                                    71,
+                                    74
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jade-1.11.0/package/bin",
+                "files": [
+                    {
+                        "name": "jade.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "jsi",
+                                    1
+                                ],
+                                "line": [
+                                    78
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jade-1.11.0/package/lib",
+                "files": [
+                    {
+                        "name": "filters-client.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    6
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "filters.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    47
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jade-1.11.0/package",
+                "files": [
+                    {
+                        "name": "jade.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "jsi",
+                                    1
+                                ],
+                                "line": [
+                                    4510
+                                ]
+                            },
+                            {
+                                "type": [
+                                    "js_function",
+                                    3
+                                ],
+                                "line": [
+                                    4503,
+                                    4503,
+                                    8956
+                                ]
+                            },
+                            {
+                                "type": [
+                                    "js_extra",
+                                    9
+                                ],
+                                "line": [
+                                    1167,
+                                    1167,
+                                    8754,
+                                    8768,
+                                    8775,
+                                    8805,
+                                    8823,
+                                    8842,
+                                    8859
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jasmine-3.4.0/package",
+                "files": [
+                    {
+                        "name": "Gruntfile.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "cmdi",
+                                    1
+                                ],
+                                "line": [
+                                    16
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-3.4.1/package/external/sizzle/dist",
+                "files": [
+                    {
+                        "name": "sizzle.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    3
+                                ],
+                                "line": [
+                                    1549,
+                                    1682,
+                                    2144
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-3.4.1/package/src/effects",
+                "files": [
+                    {
+                        "name": "Tween.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    2
+                                ],
+                                "line": [
+                                    38,
+                                    88
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-3.4.1/package/src",
+                "files": [
+                    {
+                        "name": "deferred.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    3
+                                ],
+                                "line": [
+                                    90,
+                                    98,
+                                    326
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "manipulation.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    477
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-migrate-3.1.0/package/build",
+                "files": [
+                    {
+                        "name": "release.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    2
+                                ],
+                                "line": [
+                                    182,
+                                    230
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-migrate-3.1.0/package/dist",
+                "files": [
+                    {
+                        "name": "jquery-migrate.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    2
+                                ],
+                                "line": [
+                                    647,
+                                    655
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/jquery-migrate-3.1.0/package/src",
+                "files": [
+                    {
+                        "name": "deferred.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    2
+                                ],
+                                "line": [
+                                    30,
+                                    38
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/prototype-0.0.5/package/lib",
+                "files": [
+                    {
+                        "name": "Function.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    6
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "String.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "jsi",
+                                    2
+                                ],
+                                "line": [
+                                    100,
+                                    201
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/sizzle-2.3.4/package/dist",
+                "files": [
+                    {
+                        "name": "sizzle.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    3
+                                ],
+                                "line": [
+                                    1549,
+                                    1682,
+                                    2144
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/static-eval-2.0.5/package",
+                "files": [
+                    {
+                        "name": "index.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_function",
+                                    1
+                                ],
+                                "line": [
+                                    176
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/vis-4.21.0-EOL/package/lib/network/modules/components/nodes/util",
+                "files": [
+                    {
+                        "name": "ShapeBase.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    53
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/vis-4.21.0-EOL/package/lib/network/modules",
+                "files": [
+                    {
+                        "name": "View.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "js_extra",
+                                    1
+                                ],
+                                "line": [
+                                    262
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            },
+            {
+                "dir": "/Users/alexoneill/Documents/GitHub/OSC-Code/Tools/LGTM/ext_JS_src/whereis-0.4.0/package",
+                "files": [
+                    {
+                        "name": "index.js",
+                        "vulns": [
+                            {
+                                "type": [
+                                    "cmdi",
+                                    4
+                                ],
+                                "line": [
+                                    4,
+                                    8,
+                                    10,
+                                    12
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "cwe": null,
+                "package": null,
+                "state": null,
+                "version": null
+            }
+        ]
     }
 ]
