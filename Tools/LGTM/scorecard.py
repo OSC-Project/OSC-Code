@@ -14,12 +14,16 @@ def makeGraph(fpr=0, tpr=0, title="Scorecard Graph"):
     x = fpr[1]
     y = tpr[1]
     plt.plot(x, y, marker='o', markerfacecolor='blue', markersize=12)
-    blue_patch = mpatches.Patch(color='blue', label='Default Query')
+    blue_patch = mpatches.Patch(color='blue', label='Default Security Query')
+    x = fpr[2]
+    y = tpr[2]
+    plt.plot(x, y, marker='o', markerfacecolor='orange', markersize=12)
+    orange_patch = mpatches.Patch(color='orange', label='Default Eval Query')
     x=0.66
     y=1
     plt.plot(x, y, marker='o', markerfacecolor='green', markersize=12)
     green_patch = mpatches.Patch(color='green', label='Sink Finder')
-    plt.legend(handles=[red_patch, blue_patch, green_patch])
+    plt.legend(handles=[red_patch, blue_patch, green_patch, orange_patch], loc=4)
     plt.plot([0,1], [0,1], color='black', linestyle='dashed', linewidth = 3)
     plt.xlabel('false positive rate')
     plt.ylabel('true positive rate')
@@ -32,7 +36,7 @@ map = {"Code injection" : 94}
 #print(benchmarks)
 xs=[]
 ys=[]
-for file in ['customCodeInjection2', '_CodeInjection']:
+for file in ['customCodeInjection2', '_CodeInjection', '_Eval']:
     benchmarks = []
     total_TP = 0
     total_FN = 0

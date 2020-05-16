@@ -1,0 +1,1 @@
+"Use of eval","The 'eval' function and the 'Function' constructor execute strings as code. This is dangerous and impedes program analysis and understanding. Consequently, these two functions should not be used.","recommendation","Do not use eval or the Function constructor.","/package/test/data/jquery-2.2.3.js","343","5","343","20"

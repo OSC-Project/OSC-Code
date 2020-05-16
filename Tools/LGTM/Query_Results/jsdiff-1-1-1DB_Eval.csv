@@ -1,0 +1,1 @@
+"Use of eval","The 'eval' function and the 'Function' constructor execute strings as code. This is dangerous and impedes program analysis and understanding. Consequently, these two functions should not be used.","recommendation","Do not use eval or the Function constructor.","/package/readme.js","9","36","9","77"
