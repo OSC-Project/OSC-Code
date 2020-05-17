@@ -291,12 +291,18 @@ class Automation:
         upgrade = self.QLCommands[1].format(db_location)
         runQueries = self.QLCommands[2].format(db_location, query_location, results_location)
         print()
-        #print("COPY COMMAND BELOW")
-        #print(runQueries)
-        #print()
-        #print()
-
-        #print(create)
+        # *****************************************
+        # For Debugging CodeQL and running manually 
+        # print()
+        # print("COPY COMMAND BELOW")
+        # print()
+        # print(create)
+        # print()
+        # print(upgrade)
+        # print()
+        # print(runQueries)
+        # print()
+        # ******************************************
 
         # Step 3: Running commands
         if(not dbExist):
