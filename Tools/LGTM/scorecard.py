@@ -32,7 +32,8 @@ map = {"Code injection" : 94}
 #print(benchmarks)
 xs=[]
 ys=[]
-for file in ['LGTM++', 'LGTM']:
+files = {'LGTM++' : ['custom'], 'LGTM' : ['_Eval', '_Code']}
+for file in files:
     benchmarks = []
     total_TP = 0
     total_FN = 0
@@ -59,10 +60,11 @@ for file in ['LGTM++', 'LGTM']:
                         benchmarks.append(row)
             for row in benchmarks:
                 row.append("FALSE")
-
-            for filename in os.listdir("./Query_Results"):
-                if file == 'LGTM++':
-                    if 'custom' in filename:
+            checked = []
+            checked_FP = []
+            for k in files[file]:
+                for filename in os.listdir("./Query_Results"):
+                    if k in filename:
                         with open('./Query_Results/'+filename) as csvfile:
                             try:
                                 csv.Sniffer().has_header(csvfile.read(1))
@@ -71,58 +73,32 @@ for file in ['LGTM++', 'LGTM']:
                                     flag = 0
                                     for line in benchmarks:
                                          if line[1] in row[4] and str(line[4]) == str(row[5]):
-                                             line[5] = "TRUE"
-                                             truepos += 1
+                                             if line[5] != "TRUE":
+                                                 line[5] = "TRUE"
+                                                 truepos += 1
                                              flag = 1
                                     if (flag == 1):
                                         flag = 0
                                     else:
-                                        falsepos += 1
-                                        flag = 0
+                                        if row[4] not in checked_FP:
+                                            falsepos += 1
+                                            checked_FP.append(row[4])
+                                            flag = 0
                             except:
-                                flag = 0
-                                for line in benchmarks:
-                                    if line[0].replace(".", "-") in filename:
-                                        #depot-0.1.6...    vs depot-0-1-6...
-                                        if line[5] == "FALSE":
-                                            falseneg += 1
-                                            flag = 1
-                                if flag == 1:
-                                    flag = 0
-                                else:
-                                    trueneg += 1
-                                    flag = 0
-                else:
-                    if '_Code' in filename or '_Eval' in filename:
-                        with open('./Query_Results/'+filename) as csvfile:
-                            try:
-                                csv.Sniffer().has_header(csvfile.read(1))
-                                readCSV = csv.reader(csvfile, delimiter=',')
-                                for row in readCSV:
+                                if filename[:filename.find('DB')] not in checked:
                                     flag = 0
                                     for line in benchmarks:
-                                         if line[1] in row[4] and str(line[4]) == str(row[5]):
-                                             line[5] = "TRUE"
-                                             truepos += 1
-                                             flag = 1
-                                    if (flag == 1):
+                                        if line[0].replace(".", "-") in filename:
+                                            #depot-0.1.6...    vs depot-0-1-6...
+                                            if line[5] == "FALSE":
+                                                falseneg += 1
+                                                flag = 1
+                                    if flag == 1:
                                         flag = 0
                                     else:
-                                        falsepos += 1
+                                        trueneg += 1
                                         flag = 0
-                            except:
-                                flag = 0
-                                for line in benchmarks:
-                                    if line[0].replace(".", "-") in filename:
-                                        #depot-0.1.6...    vs depot-0-1-6...
-                                        if line[5] == "FALSE":
-                                            falseneg += 1
-                                            flag = 1
-                                if flag == 1:
-                                    flag = 0
-                                else:
-                                    trueneg += 1
-                                    flag = 0
+                        checked.append(filename[:filename.find('DB')])
             total = truepos + trueneg + falsepos + falseneg
             tpr = truepos / (truepos+falseneg)
             fpr = falsepos / (falsepos + trueneg)
