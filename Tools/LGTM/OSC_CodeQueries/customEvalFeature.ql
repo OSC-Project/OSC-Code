@@ -1,6 +1,7 @@
 /**
  * @name Use of eval through JS features
- * @description Non-standard language features of type eval
+ * @description Non-standard language features such as expression closures or let expressions
+ *              make it harder to reuse code.
  * @kind problem
  * @problem.severity warning
  * @id js/non-standard-language-feature
