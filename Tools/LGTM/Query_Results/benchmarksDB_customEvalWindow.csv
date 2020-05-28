@@ -1,0 +1,1 @@
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern for using call to global window.","warning","Potential vulnerability","/BenchmarkTest006.js","17","11","17","44"

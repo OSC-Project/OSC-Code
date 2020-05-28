@@ -2,9 +2,9 @@
  * @id js/examples/call
  * @name Custom Eval Property
  * @description Interpreting unsanitized user input as code allows a malicious user arbitrary
- *              code execution. Pattern focused on array-like properties 
+ *              code execution. Pattern focused on array-like properties
  * @tag call
- *      function 
+ *      function
         eval
  * @kind problem
  */

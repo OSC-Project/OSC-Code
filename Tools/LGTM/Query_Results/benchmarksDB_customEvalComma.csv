@@ -1,0 +1,1 @@
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern for comman execution; example: (1, eval)(data)","warning","Got it!","/BenchmarkTest004.js","17","11","17","27"

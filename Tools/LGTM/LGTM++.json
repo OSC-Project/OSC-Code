@@ -1,9 +1,29 @@
-{"queries": 
+{"queries":
     [
         {
             "name": "customCodeInjection2.ql",
             "summary": "can do xyz",
-            "date" : "2020-02-14" 
+            "date" : "2020-02-14"
+        },
+        {
+            "name": "customEvalCallApply.ql",
+            "summary": "can do xyz",
+            "date" : "2020-02-14"
+        },
+        {
+            "name": "customEvalComma.ql",
+            "summary": "can do xyz",
+            "date" : "2020-02-14"
+        },
+        {
+            "name": "customEvalProperty.ql",
+            "summary": "can do xyz",
+            "date" : "2020-02-14"
+        },
+        {
+            "name": "customEvalWindow.ql",
+            "summary": "can do xyz",
+            "date" : "2020-02-14"
         }
     ]
 }

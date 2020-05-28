@@ -16,6 +16,7 @@ app.post('/', function(req, res){
         try {
           obj[eval].call(param);
           obj[eval].apply(param);
+          obj[eval](param);
         } catch (e) {
           x = param + " was used"
         }

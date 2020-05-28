@@ -1,0 +1,2 @@
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern for using call to global window.","warning","Potential vulnerability","/backbone-localstorage-0.3.2/package/test/vendor/jquery.js","612","5","612","41"
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern for using call to global window.","warning","Potential vulnerability","/flot-3.2.5/package/source/jquery.js","565","5","565","41"

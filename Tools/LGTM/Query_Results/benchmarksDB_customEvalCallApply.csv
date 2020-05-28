@@ -1,0 +1,3 @@
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern used for .call and .apply methods","warning","Potential vulnerability","/BenchmarkTest006.js","17","11","17","44"
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern used for .call and .apply methods","warning","Potential vulnerability","/BenchmarkTest010.js","17","11","17","31"
+"Code injection custom 2","Interpreting unsanitized user input as code allows a malicious user arbitrary code execution. Pattern used for .call and .apply methods","warning","Potential vulnerability","/BenchmarkTest010.js","18","11","18","32"
