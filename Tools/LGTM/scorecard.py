@@ -7,7 +7,7 @@ import matplotlib.patches as mpatches
 import pandas as pd
 
 def makeGraph(title="Scorecard Graph"):
-    x = 
+    x = 0.975890985
     y = 1
     plt.plot(x, y, marker='o', markerfacecolor='red', markersize=12)
     red_patch = mpatches.Patch(color='red', label='LGTM++')

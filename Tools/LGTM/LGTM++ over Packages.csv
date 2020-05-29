@@ -1,11 +1,11 @@
 CWE,TP,FN,TN,FP,Total,TPR,FPR,Score
-94:Code injection,6,0,1,931,938,1,0.998927039,0.001072961
+94:Code injection,6,0,23,931,960,1,0.975890985,0.024109015
 ,"Total TP:
 6","Total FN:
 0","Total TN:
-43","Total FP:
+23","Total FP:
 931","Total Test Cases:
-","Average TPR:
-","Average FPR:
-","Average Score:
-"
+960","Average TPR:
+1","Average FPR:
+.97","Average Score:
+.024"
