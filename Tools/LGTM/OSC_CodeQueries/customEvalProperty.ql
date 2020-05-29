@@ -11,5 +11,5 @@
 
 import javascript
 from CallExpr e, IndexExpr i
-where e.getCallee()=i and i.getPropertyName()="eval"
+where e.getCallee()=i
 select e, "here"

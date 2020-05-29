@@ -21,6 +21,11 @@
             "date" : "2020-02-14"
         },
         {
+            "name": "customEvalFunctionProp.ql",
+            "summary": "can do xyz",
+            "date" : "2020-02-14"
+        },
+        {
             "name": "customEvalWindow.ql",
             "summary": "can do xyz",
             "date" : "2020-02-14"
